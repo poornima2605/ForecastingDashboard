@@ -1,0 +1,16 @@
+# Operating system files
+/node_modules/
+/target/
+/dist/
+/.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# IDE and editor files
+.idea/
+.vscode/
+__pycache__/
+*.env

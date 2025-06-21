@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engine Usage Forecast</title>
+</head>
+<body>
+    <h1>Upload Engine Usage Data (CSV)</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <input type="submit" value="Upload & Forecast">
+    </form>
+    {% if plot %}
+        <h2>Forecast Chart</h2>
+        <img src="data:image/png;base64,{{ plot }}" />
+    {% endif %}
+</body>
+</html>
