@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import pandas as pd
-from forecast import forecast_fuel_usage
+from forecasting.forecast import forecast_fuel_usage
 
 app = Flask(__name__)
 

@@ -1,5 +1,9 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import pandas as pd
-from forecast import forecast_fuel_usage
+from forecasting.forecast import forecast_fuel_usage
 
 
 def test_forecast_output_type():
